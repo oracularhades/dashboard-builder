@@ -100,3 +100,11 @@ button:hover {
   background-color: rgba(184, 184, 184, 0.384);
   filter: brightness(0.9);
 }
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
