@@ -1,9 +1,9 @@
-import '../css/loadingspinner.css';
+import './css/loadingspinner.css';
 
-export default function LoadingSpinner() {
-    let size = props.style.width;
-    if (!size) {
-        size = 20;
+export default function LoadingSpinner(props) {
+    let size = 20;
+    if (props.style && props.style.width) {
+        size = props.style.width;
     }
 
     let animationSpeed = props.speed;

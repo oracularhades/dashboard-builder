@@ -4,11 +4,11 @@ import './../../global.css';
 
 export default function UserDetailsRow(props) {
     return (
-        <div className='user_details_row'>
+        <div className={`user_details_row ${props.className}`}>
             <ProfilePic/>
             <div className='user_details_row_user_details'>
-                <p className='user_details_row_user_details_name'>Josh</p>
-                <p className='user_details_row_user_details_subtext greyText'>josh@{process.env.NEXT_PUBLIC_email_placeholder_domain}</p>
+                {props.user.name && <p className='user_details_row_user_details_name'>{props.user.name}</p>}
+                {props.user.email && <p className='user_details_row_user_details_subtext greyText'>{props.user.email}</p>}
             </div>
         </div>
     )

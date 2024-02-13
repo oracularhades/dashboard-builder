@@ -5,7 +5,7 @@ import UserDetailsRow from "./user_details_row";
 export default function UserCard1(props) {
     return (
         <div className="UserCard1">
-            <UserDetailsRow/>
+            <UserDetailsRow user={props.user}/>
             {props.children}
         </div>
     )

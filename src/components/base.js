@@ -1,10 +1,13 @@
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+    subsets: ['latin'],
+    weight: ['400', '700']
+})
 
 export default function Base(props) {
     return (
-        <div className={`${props.className} ${inter.className}`} style={props.style}>
+        <div className={`${props.className} ${roboto.className}`} style={props.style}>
             {props.children}
         </div>
     )

@@ -23,7 +23,6 @@ export default function Login1() {
         <div className='FormStyle_1_div'>
           <Login_With service="Microsoft" icon="https://www.microsoft.com/favicon.ico?v2" redirect="https://example.com"/>
           <Login_With service="Github" icon="https://github.com/favicon.ico" redirect=""/>
-          <Login_With service="Bluesky" icon="https://bsky.app/static/favicon-32x32.png" redirect=""/>
         </div>
       </FormStyle_1>
     </Frame_AestheticMetadataPanel>

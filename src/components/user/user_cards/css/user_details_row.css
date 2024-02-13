@@ -3,6 +3,8 @@
     flex-direction: row;
     align-items: center;
     column-gap: 6px;
+    padding: 4px;
+    border-radius: 4px;
 }
 
 .user_details_row .profile_pic {
@@ -18,4 +20,9 @@
 
 .user_details_row_user_details_name {
     font-size: 16px;
+    font-weight: bold;
+}
+
+.user_details_row_user_details_subtext {
+    font-size: 13px;
 }
