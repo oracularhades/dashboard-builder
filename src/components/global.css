@@ -55,6 +55,11 @@ dialog {
   overflow-x: hidden;
 }
 
+dialog::backdrop {
+  opacity: 0.7;
+  background-color: black;
+}
+
 Input {
   position: relative;
   /* background-color: #303132; */
