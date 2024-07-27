@@ -66,7 +66,7 @@ export default function Message_inject(props) {
                     alias: emoteName,
                 });
                 
-                return <img id="donot" className='emoteImgImg disable-select' alt={`${username}_${emoteName}`} src={`https://media.infosec.exchange/infosec.exchange/cache/accounts/avatars/109/751/923/963/316/074/original/1c9adfa77baa01fe.jpg`}/>
+                return <img id="donot" className='emoteImgImg disable-select' alt={`${username}_${emoteName}`} src={null}/>
             } else if (props.showLinks == true && /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(data) == true && data.startsWith("https")) {
                 if (props.hideThoughtLinks == true && data.startsWith("https://example.com/thought/") && /[^a-zA-Z0-9/:.]/g.test(data.content) == false && /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(data) == true) {
                     return;
